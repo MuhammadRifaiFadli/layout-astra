@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <style>
+      * {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+h4 {
+    color: black;
+    font-size: 24px;
+    margin: 16px 0;
+    font-weight: normal;
+}
+
+h6 {
+    font-weight: normal;
+    color: #67768E;
+    font-size: 18px;
+}
+
+.primary-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.primary-section {
+    width: 100vw; /* Buat lebar penuh viewport */
+    background-image: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.container {
+    max-width: 1280px;
+    padding: 30px;
+    margin: auto;
+}
+
+.navbar ul li a img {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar {
+    justify-content: end;
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* PRIMARY SECTION */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Membungkus elemen di layar kecil */
+}
+
+.container {
+    max-width: 100%; /* Pastikan container tidak memiliki lebar tetap */
+    margin: 0;
+    padding: 0;
+}
+
+
+.primary-section .container .row .col h6 {
+    color: white;
+    margin: 32px 0;
+}
+
+.primary-section .container .row .col a {
+    background-color: rgb(255, 205, 87);
+    padding: 30px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* SECONDARY SECTION */
+.secondary-section .container .row {
+    margin-top: 70px;
+}
+
+/* THIRD SECTION */
+
+.third-section .container .row .col img {
+    width: 350px;
+    height: 400px;
+}
+
+/* FOURTH SECTION */
+.fourth-section .container {
+    padding: 100px 30px;
+}
+
+.fourth-section .container .row .col:first-child {
+    max-width: 500px;
+}
+
+/* FIFTH SECTION */
+.fifth-section {
+    background-color: #f9f6fe;
+}
+
+.fifth-section .container {
+    text-align: center;
+    width: 750px;
+    padding: 100px 30px;
+}
+
+.fifth-section .container .row .col {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fifth-section .container .row .col h6:first-of-type {
+    margin-top: 24px;
+    margin-bottom: 35px;
+}
+
+.fifth-section .container .row .col h6:last-of-type {
+    font-weight: bold;
+}
+
+/* SIXTH SECTION */
+.sixth-section .container {
+    padding: 140px 30px;
+}
+
+.sixth-section .container .row .col {
+    width: 300px;
+}
+
+/* SEVENTH SECTION  */
+.seventh-section {
+    background-image: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+}
+
+.seventh-section .container {
+    text-align: center;
+    width: 750px;
+    padding: 80px 30px;
+}
+
+.seventh-section .container .row {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seventh-section .container .row .col h2 {
+    margin-top: 24px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.seventh-section .container .row .col a {
+    background-color: rgb(255, 205, 87);
+    padding: 30px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.eighth-section .container .row .col h6 a {
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nineth-section {
+    background-color: #f9f6fe;
+}
+
+.nineth-section .container .row {
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#check {
+    display: none;
+}
+
+/* Styling untuk burger button */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+/* Atur agar menu terlihat normal saat di layar besar */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .primary-section {
+        padding: 50px 0; /* Kurangi padding di sisi kiri dan kanan */
+        background-size: cover;
+    }
+}
+
+
+/* Ketika layar kecil */
+@media (max-width: 872px) {
+    .checkbtn {
+        display: block; /* Tampilkan burger icon */
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        background: #333;
+        display: block;
+        transition: all 0.5s;
+    }
+
+    .navbar ul li {
+        margin: 20px 0;
+    }
+
+    /* Tampilkan menu saat checkbox di cek */
+    #check:checked ~ ul {
+        left: 0;
+    }
+}  
+    </style>
+</head>
+
+<body>
+    <header class="primary-header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Checkbox for toggling menu -->
+            <input type="checkbox" id="check">
+            
+            <!-- Menu icon -->
+            <label for="check" class="checkbtn">
+                &#9776;
+            </label>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    
+
+    <section id="home" class="primary-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Your Idea Matters!</h1>
+                    <h6>Pulvinar enim ac tortor nulla facilisi tristique facilisi <br>
+                        elementum sollicitudin eget lorem.</h6>
+                    <a href="#">Make a Website</a>
+                </div>
+                <div class="col">
+                    <img src="hero-img.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secondary-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="building.svg" alt="">
+                    <h4>Local Business</h4>
+                    <h6>Lorem ipsum dolor consectetur adipiscing elit eiusmod.</h6>
+                </div>
+                <div class="col">
+                    <img src="shopping-bag.svg" alt="">
+                    <h4>Online Store</h4>
+                    <h6>Lorem ipsum dolor consectetur adipiscing elit eiusmod.</h6>
+                </div>
+                <div class="col">
+                    <img src="blog.svg" alt="">
+                    <h4>Blogging</h4>
+                    <h6>Lorem ipsum dolor consectetur adipiscing elit eiusmod.</h6>
+                </div>
+                <div class="col">
+                    <img src="portfolio.svg" alt="">
+                    <h4>Portfolio</h4>
+                    <h6>Lorem ipsum dolor consectetur adipiscing elit eiusmod.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="third-section">
+        <div class="container">
+            <div class="title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="branding.jpg" alt="">
+                    <h4>Branding Design</h4>
+                    <h6>Sem quis erat nibh id neque tincidunt molestie convallis ut nibh vel, lorem consequat
+                        ullamcorper.</h6>
+                </div>
+                <div class="col">
+                    <img src="graphic.jpg" alt="">
+                    <h4>Graphic Design</h4>
+                    <h6>Sem quis erat nibh id neque tincidunt molestie convallis ut nibh vel, lorem consequat
+                        ullamcorper.</h6>
+                </div>
+                <div class="col">
+                    <img src="web.jpg" alt="">
+                    <h4>Web Development</h4>
+                    <h6>Sem quis erat nibh id neque tincidunt molestie convallis ut nibh vel, lorem consequat
+                        ullamcorper.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="fourth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>We help teams <br> build the business <br> of their dreams</h2>
+                    <h6>Et in risus egestas nec vitae odio ac nibh vestibulum volutpat aliquet aenean erat lobortis non.
+                    </h6>
+                    <br>
+                    <h6>Nibh egestas dictumst cursus est turpis quis tincidunt pulvinar maecenas eget massa vel, ante
+                        nam blandit egestas enim id quis sit maecenas id nunc tempus auctor orci, enim imperdiet proin
+                        nibh mattis.</h6>
+                </div>
+                <div class="col">
+                    <img src="about-us.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fifth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="avatar.png" alt="">
+                    <h6>“The best part is that Astra comes with hundreds of professionally designed templates for just
+                        about every industry, makes it super easy for non-techy users to build a website.”</h6>
+                    <h6>Wade Warren</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whyus" class="sixth-section">
+        <div class="container">
+            <div class="title">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="passionate.svg" alt="">
+                    <h4>Passionate</h4>
+                    <h6>Tempor ullamcorper urna, est, lectus amet sit tempor pretium mi sed morbi cras posuere sit
+                        ultrices bibendum augue sit ornare.</h6>
+                </div>
+                <div class="col">
+                    <img src="professional.svg" alt="">
+                    <h4>Professional</h4>
+                    <h6>Tempor ullamcorper urna, est, lectus amet sit tempor pretium mi sed morbi cras posuere sit
+                        ultrices bibendum augue sit ornare.</h6>
+                </div>
+                <div class="col">
+                    <img src="support.svg" alt="">
+                    <h4>Support</h4>
+                    <h6>Tempor ullamcorper urna, est, lectus amet sit tempor pretium mi sed morbi cras posuere sit
+                        ultrices bibendum augue sit ornare.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="seventh-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Get a professional <br> website today!</h2>
+                    <a href="#">Make a Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="eighth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Leave a Reply</h4>
+                    <h6>You must be <a href="">logged in</a> to post a comment.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="nineth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>Copyright &copy; 2024 Astra | Powered by HTML CSS</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
