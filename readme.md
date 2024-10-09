@@ -7,9 +7,6 @@ Astra adalah sebuah proyek website yang dirancang untuk membantu tim dalam memba
 - [Fitur](#fitur)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 - [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
 
 ## Fitur
 
