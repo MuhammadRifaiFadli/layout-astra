@@ -2,6 +2,8 @@
 
 Astra adalah sebuah proyek website yang dirancang untuk membantu tim dalam membangun bisnis impian mereka. Dengan berbagai fitur dan desain yang responsif, Astra menawarkan solusi untuk pembuatan website yang mudah dan efisien.(blom jadi ngikutin template wordpress)
 
+<img src="Screenshot_1.png">
+
 ## Daftar Isi
 
 - [Fitur](#fitur)
